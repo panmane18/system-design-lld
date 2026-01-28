@@ -1,0 +1,27 @@
+package vending_machine;
+
+import java.math.BigDecimal;
+
+public class Product {
+    private final String productCode;
+    private final String description;
+    private final BigDecimal unitPrice;
+
+    public Product(String productCode, String description, BigDecimal unitPrice) {
+        this.productCode = productCode;
+        this.description = description;
+        this.unitPrice = unitPrice;
+    }
+
+    public BigDecimal getUnitPrice() {
+        return unitPrice;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getProductCode() {
+        return productCode;
+    }
+}
